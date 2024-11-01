@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/Favicon-EG.png" type="image/x-icon">
+    <title>Five Nights at Freddy's</title>
+</head>
+
+<body>
+    <header>
+        <img src="/Five/Imagenes/five nights at freddys logo.png" alt="Logo" class="Logo">
+        <nav>
+            <ul>
+                <li><a href="pagina-inicio.html">Inicio</a></li>
+                <li><a href="pagina-acercade.html">Acerca de</a></li>
+                <li><a href="pagina-peliculas.html">Películas</a></li>
+            </ul>
+        </nav>
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Buscar..." class="buscar">
+            <input type="button" value="Buscar" class="button">
+        </div>
+    </header>
+
+    <section id="banner">
+
+        <h2>Five nights at freddys</h2>
+
+    </section>
+
+    <section id="intro" class="container">
+        <div class="row">
+            <div class="col-4 col-12-medium">
+                <section class="first">
+                    <i class="icon solid featured fa-cog"></i>
+                    
+
+    <div class="carrusel">
+        <input type="radio" id="imagen1" name="carrusel" checked>
+        <input type="radio" id="imagen2" name="carrusel">
+        <input type="radio" id="imagen3" name="carrusel">
+        <input type="radio" id="imagen4" name="carrusel">
+
+        <div class="imagenes">
+            <img src="/Five/Imagenes/Freddy_Fazbear.webp" alt="Imagen 1">
+            <img src="/Five/Imagenes/bonnie.jpeg" alt="Imagen 2">
+            <img src="/Five/Imagenes/Chica.webp" alt="Imagen 3">
+            <img src="/Five/Imagenes/Foxy.webp" alt="Imagen 4">
+        </div>
+
+        <div class="navegacion">
+            <label for="imagen1"></label>
+            <label for="imagen2"></label>
+            <label for="imagen3"></label>
+            <label for="imagen4"></label>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const totalImages = 4; // Número total de imágenes
+
+        function autoSlide() {
+            currentIndex = (currentIndex + 1) % totalImages; // Incrementa el índice
+            document.getElementById(`imagen${currentIndex + 1}`).checked = true; // Cambia el radio button
+        }
+
+        setInterval(autoSlide, 3000); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer formulario</title>
+</head>
+
+<body>
+    <!-- form indica que es un formuario por un usuario o el administrador, el ation indica coneccion a una base de datos, el metho puede ser post o get -->
+
+    <form action="#" method="#"  style="border: 2px solid; width: 45%">
+      <h2>Formulario de actualizacion</h2>
+      <label for="nombre-1">Primer nombre</label>
+      <input type="text" placeholder="Primer nombre" 
+      id="nombre-1" name="nombre" size="21">
+
+<!-- la etiqueta label se utiliza para relacionar el input y for   -->
+<!-- los label y input tiene atributos type, placeholder, label, for, name, saze -->
+    
+     <label for="nombre-2">Segundo nombre</label>
+     <input type="text" placeholder="Segundo nombre"
+     id="nombre-2" name="nombre-2" size="24"> <br><br>
+    
+
+    <label for="apellido-1">Primer apellido</label>
+    <input type="text" placeholder="Primer apellido" 
+    id="apellido-1" name="apellido-1" size="20">
+
+    <label for="apellido-2">Segundo apellido</label>
+    <input type="text" placeholder="Segundo apellido" 
+    id="apellido-2" name="apellido-2" size="24"> <br><br>
+
+
+    <label for="fecha-nacimiento">Fecha de nacimiento</label>
+    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" size="21">
+    <label for="pais-nacimiento">pais de nacimiento</label>
+    <select name="pais-nacimiento" id="pais-nacimiento">
+    <option value="#">Seleccionar pais de nacimiento</option>
+    <option value="Colombia">Colombia</option>
+    <option value="Venezuela">Venezuela</option>
+    <option value="Ecuador">Ecuador</option>
+    <option value="Argentina">Argentina</option>
+     </select>
+     <br><br>
+
+
+     <label for="indice-genero">indicar su genero</label>
+     <input type="radio" name="indice-genero" value="Masculino">Masculino
+     <input type="radio" name="indice-genero" value="Femenino">Femenino
+     <br><br>
+     <label for="direccion-residencia">Direccion de residencia</label>
+     <input type="text"placeholder="Direccion de residencia"
+     id="direccion-residencia" name="direccion-residencia" size="58">
+
+    <br><br>
+     <label for="Email">Correo electrónio</label>
+     <input type="email" placeholder="Correo electrónio" 
+     id="email" name="email" size="28">
+
+
+     <label for="Telefono">Telefono</label>
+     <input type="number" placeholder="Ingresar su numero de tel."
+     id="Telefono" name="Telefono">
+     <br>
+     <br>
+
+     <label for="msg">mensaje</label>
+     <br>
+     <textarea id="msg" name="msg" cols="76" rows="5" placeholder="Escribe algo..."></textarea>
+      <br><br>
+
+      <button type="submit" id="enviar" name="enviar" style="width: 10%;">enviar</button>
+
+     </form>
+
+
+
+</body>
+
+</html>
